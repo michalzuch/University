@@ -1,0 +1,29 @@
+Bubble Sort
+1k: Elapsed time [s] = 0.00134942
+5k: Elapsed time [s] = 0.0282725
+10k: Elapsed time [s] = 0.0845376
+25k: Elapsed time [s] = 0.647958
+50k: Elapsed time [s] = 2.92225
+75k: Elapsed time [s] = 6.72295
+100k: Elapsed time [s] = 12.1095
+500k: Elapsed time [s] = 308.779
+
+Selection Sort
+1k: Elapsed time [s] = 0.00312113
+5k: Elapsed time [s] = 0.0432167
+10k: Elapsed time [s] = 0.103628
+25k: Elapsed time [s] = 0.636707
+50k: Elapsed time [s] = 2.55629
+75k: Elapsed time [s] = 5.74453
+100k: Elapsed time [s] = 10.1983
+500k: Elapsed time [s] = 256.601
+
+Insertion Sort
+1k: Elapsed time [s] = 0.000395
+5k: Elapsed time [s] = 0.0066145
+10k: Elapsed time [s] = 0.0169481
+25k: Elapsed time [s] = 0.0739717
+50k: Elapsed time [s] = 0.309076
+75: Elapsed time [s] = 0.693088
+100k: Elapsed time [s] = 1.213
+500k: Elapsed time [s] = 30.0521
