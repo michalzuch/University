@@ -1,0 +1,17 @@
+#ifndef SEM_H
+#define SEM_H
+
+#include <semaphore.h>
+
+typedef sem_t *semid;
+int sem_val;
+
+semid semCreate(const char *name, int val);
+void semRemove(const char *name);
+semid semOpen(const char *name);
+void semClose(semid sem);
+void semP(semid sem);
+void semV(semid sem);
+void semInfo(semid sem, int sem_val);
+
+#endif /* SEM_H */
