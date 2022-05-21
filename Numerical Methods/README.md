@@ -6,19 +6,16 @@ Computer tasks from classes.
 
 Write a program to approximate the derivative from the formulas:
 
-<!-- $$ a) D_h f(x) \equiv \frac{f(x+h) - f(x)}{h} $$ -->
-<!-- $$ b) D_h f(x) \equiv \frac{f(x+h) - f(x-h)}{2h} $$ -->
-![Math input](/Numerical%20Methods/Math/1.png)
+$$ a) D_h f(x) \equiv \frac{f(x+h) - f(x)}{h} $$
+$$ b) D_h f(x) \equiv \frac{f(x+h) - f(x-h)}{2h} $$
 
 Analyze how the error
 
-<!-- $$ |D_h f(x) - f'(x)| $$ -->
-![Math input](/Numerical%20Methods/Math/2.png)
+$$ |D_h f(x) - f'(x)| $$
 
 behaves for the function f(x) = cos(x) and the point x = 0.3 at changing the h parameter for various floating point types (float & double). Plot
 
-<!-- $$ |D_h f(x) − f'(x)| $$ -->
-![Math input](/Numerical%20Methods/Math/2.png)
+$$ |D_h f(x) − f'(x)| $$
 
 as a function of h on a logarithmic scale.
 
@@ -28,7 +25,7 @@ as a function of h on a logarithmic scale.
 
 There are matrixes:
 
-<!-- $$
+$$
 A_1 =
 \begin{pmatrix}
 2.40827208 & -0.36066254 & 0.80575445 & 0.46309511 & 1.20708553 \\
@@ -50,45 +47,39 @@ A_2 =
 0.24938964 & 0.31048984 & 0.18519926 & 2.27845311 & -0.54893124 \\
 0.82783473 & -0.53591589 & 0.13060923 & -0.54893124 & 2.6276678
 \end{pmatrix}
-$$ -->
-![Math input](/Numerical%20Methods/Math/3.png)
+$$
 
 Let's define the vectors
 
-<!-- $$ b \equiv
+$$ b \equiv
 \begin{pmatrix}
 5.40780228 & 3.67008677 & 3.12306266 & -1.11187948 & 0.54437218
 \end{pmatrix}
 ^T
-$$ -->
-![Math input](/Numerical%20Methods/Math/4.png)
+$$
 
 and
 
-<!-- $$ b' \equiv
+$$ b' \equiv
 \begin{pmatrix}
 10^{-5} & 0 & 0 & 0 & 0
 \end{pmatrix}
 ^T
-$$ -->
-![Math input](/Numerical%20Methods/Math/5.png)
+$$
 
 Using the computer algebra package or numeric library of your choice, solve the equations
 
-<!-- $$ A_iy_i \equiv b $$ -->
-![Math input](/Numerical%20Methods/Math/6.png)
+$$ A_iy_i \equiv b $$
 
 and
 
-<!-- $$ A_iy'_i \equiv b' $$ -->
-![Math input](/Numerical%20Methods/Math/7.png)
+$$ A_iy'_i \equiv b' $$
 
 for i = 1.2.
 
 Find
 
-<!-- $$ \Delta_{i} \equiv || y_i − y′_i ||_2 $$ -->
-![Math input](/Numerical%20Methods/Math/8.png)
+$$ \Delta_{i} \equiv || y_i − y′_i ||_2 $$
 
 and interpret the value difference of them.
 
@@ -98,12 +89,11 @@ and interpret the value difference of them.
 
 Find
 
-<!-- $$ y = A ^{−1}x $$ -->
-![Math input](/Numerical%20Methods/Math/9.png)
+$$ y = A ^{−1}x $$
 
 for
 
-<!-- $$
+$$
 A =
 \begin{pmatrix}
 1.2 & \frac{0.1}{1} & \frac{0.4}{1^2} \\
@@ -114,13 +104,11 @@ A =
 & & & & & & 0.2 & 1.2 & \frac{0.1}{N-1} \\
 & & & & & & & 0.2 & 1.2
 \end{pmatrix}
-$$ -->
-![Math input](/Numerical%20Methods/Math/10.png)
+$$
 
 and
 
-<!-- $$ x = (1, 2, ..., N)^T $$ -->
-![Math input](/Numerical%20Methods/Math/11.png)
+$$ x = (1, 2, ..., N)^T $$
 
 We set N = 100. Also calculate the determinant of the matrix A. Problem solve the right method and use the matrix structure. Please program the algorithm yourself - do not use biblical procedures linear algebra or computational algebra packets (unless to check your solutions, which is always welcome).
 
@@ -130,12 +118,11 @@ We set N = 100. Also calculate the determinant of the matrix A. Problem solve th
 
 Solve the matrix equation
 
-<!-- $$ A_y = b $$ -->
-![Math input](/Numerical%20Methods/Math/12.png)
+$$ A_y = b $$
 
 for
 
-<!-- $$
+$$
 A =
 \begin{pmatrix}
 10 & 8 & 1 & 1 & ... & 1 & 1 & 1 & 1 \\
@@ -146,12 +133,10 @@ A =
 1 & 1 & 1 & 1 & ... & 1 & 1 & 10 & 8 \\
 1 & 1 & 1 & 1 & ... & 1 & 1 & 1 & 10 \\
 \end{pmatrix}
-$$ -->
-![Math input](/Numerical%20Methods/Math/13.png)
+$$
 
 and
 
-<!-- $$ b ≡ (5,., 5)^T $$ -->
-![Math input](/Numerical%20Methods/Math/14.png)
+$$ b ≡ (5,., 5)^T $$
 
 Matrix A has the numbers 10 on the diagonal, 8 in the first position above the diagonal, a the remaining elements are equal to 1. The dimension of the matrix is set to N = 50. The appropriate algorithm, similarly as for the NUM3 task, you should implement it yourself.
